@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> Name of student: {{student.name}}</p>
+    <p> LANGUAGE : {{student.language}}</p>
+    <p>Course of studying :{{student.course}}</p>
+    <P>grade :{{student.grade}}</P>
+    <form class="form-inline" method= "POST" action="{{ url_for('menu_change_course') }}">
+    <button type="submit" class="btn btn-default">Change course</button>
+    </form>
+    <form class="form-inline" method= "POST" action="{{ url_for('menu_autorization') }}">
+        <button type="submit" class="btn btn-default">Change grade</button>
+    </form>
+    <form class="form-inline" method= "POST" action="{{ url_for('show_items') }}">
+        <button type="submit" class="btn btn-default">Home page</button>
+    </form>
+</body>
+</html>
